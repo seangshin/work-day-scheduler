@@ -38,7 +38,7 @@ function future() {
 }
 //Function to update background color if current time is within schedule time
 function present() {
-  if(currentTime.hour>=0 && currentTime.hour<=8) {
+  if(currentTime.hour()>=0 && currentTime.hour()<=8) {
     timeTable[currentTime.hour()-9].addClass("bg-danger text-white");
   }
 }
